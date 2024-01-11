@@ -1,5 +1,5 @@
 import { useState } from "react";
-import star from "../assets/star.svg";
+import star from "../../assets/star.svg";
 const JoinPanda = () => {
   const [isChecked1, setIsChecked1] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
@@ -22,7 +22,7 @@ const JoinPanda = () => {
             />
           </svg>
         </div>
-        <div className="flex flex-col gap-3 mx-7 p-10">
+        <div className="flex flex-col gap-3 p-10">
           <p className="text-[#1F1F1F] text-[32px] font-medium">
             Create your free account
           </p>
@@ -42,6 +42,7 @@ const JoinPanda = () => {
                 type="email"
                 placeholder="Email Address"
                 className="w-full p-2 text-[#E0B51D]  text-sm font-normal focus-within:ring-0 focus-within:outline-none"
+                style={{backgroundColor:"#F5F1ED"}}
               />
             </div>
 
@@ -60,6 +61,7 @@ const JoinPanda = () => {
               type={showPassword ? "text" : "password"}
               placeholder="Password"
               className="w-full p-2 text-[#A95454]  text-sm focus-within:ring-0 focus-within:outline-none"
+              style={{backgroundColor:"#F5F1ED"}}
             />
             <span
               className="underline cursor-pointer"
@@ -74,6 +76,7 @@ const JoinPanda = () => {
               type={showConfirmPassword ? "text" : "password"}
               placeholder="Confirm Password"
               className="w-full p-2 text-[#A95454]  text-sm focus-within:ring-0 focus-within:outline-none"
+              style={{backgroundColor:"#F5F1ED"}}
             />
             <span
               className="underline cursor-pointer"
@@ -94,9 +97,9 @@ const JoinPanda = () => {
             checked={isChecked1}
             onChange={() => setIsChecked1(!isChecked1)}
           />
-          <label htmlFor="checkbox1" class="flex items-center cursor-pointer">
+          <label htmlFor="checkbox1" className="flex items-center cursor-pointer">
             <div class="w-7 h-7 border border-gray-300 rounded-md transition-all duration-300 ease-in-out flex items-center justify-center">
-              {isChecked1 ? <img src={star} class="w-4 h-4" alt="star" /> : null}
+              {isChecked1 ? <img src={star} className="w-4 h-4" alt="star" /> : null}
             </div>
             <span className="ml-3 text-[#1F1F1F] font-medium text-base leading-5">
               I’m an Expert
@@ -114,7 +117,7 @@ const JoinPanda = () => {
           />
           <label htmlFor="checkbox2" className="flex items-center cursor-pointer">
             <div class="w-7 h-7 border border-gray-300 rounded-md transition-all duration-300 ease-in-out flex items-center justify-center">
-              {isChecked2 ? <img src={star} class="w-4 h-4" alt="star" /> : null}
+              {isChecked2 ? <img src={star} className="w-4 h-4" alt="star" /> : null}
             </div>
             <span class="ml-3 text-[#1F1F1F] font-medium text-base leading-5">
               I’m an Organization in Africa
