@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const SignInPage = ({setSubTab,setHomeTab}) => {
+const SignInPage = ({ setSubTab, setHomeTab }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -13,8 +13,7 @@ const SignInPage = ({setSubTab,setHomeTab}) => {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-          >
-          </svg>
+          ></svg>
         </div>
         <div className="flex flex-col justify-center items-center gap-3 mx-7 p-10">
           <p className="text-[#1F1F1F] text-[32px] font-medium">Sign In</p>
@@ -26,7 +25,7 @@ const SignInPage = ({setSubTab,setHomeTab}) => {
                 type="email"
                 placeholder="Email Address"
                 className="w-full p-2 text-[#E0B51D] text-sm font-normal focus-within:ring-0 focus-within:outline-none"
-                style={{backgroundColor:"#F5F1ED"}}
+                style={{ backgroundColor: "#F5F1ED" }}
               />
             </div>
             <div className="flex gap-2">
@@ -41,7 +40,7 @@ const SignInPage = ({setSubTab,setHomeTab}) => {
                 type={showPassword ? "text" : "password"}
                 placeholder="Password"
                 className="w-full p-2 text-[#E0B51D] text-sm focus-within:ring-0 focus-within:outline-none"
-                style={{backgroundColor:"#F5F1ED"}}
+                style={{ backgroundColor: "#F5F1ED" }}
               />
               <div
                 className="underline cursor-pointer"
@@ -56,11 +55,12 @@ const SignInPage = ({setSubTab,setHomeTab}) => {
               </p>
             </div>
           </div>
-          <span className="text-[#1F1F1F] text-base font-medium underline cursor-pointer"
-          onClick={()=>{
-            setHomeTab("");
-            setSubTab("Forgot password")
-          }}
+          <span
+            className="text-[#1F1F1F] text-base font-medium underline cursor-pointer"
+            onClick={() => {
+              setHomeTab("");
+              setSubTab("Forgot password");
+            }}
           >
             Forgot password?
           </span>

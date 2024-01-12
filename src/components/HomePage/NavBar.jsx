@@ -115,16 +115,13 @@ const Navbar = () => {
                   </span>
                 </div>
               </div>
-            </div> 
-          </div>
-        ):(
-          <div className="w-full h-full overflow-auto">
-            <Page/>
             </div>
-          
-        )
-        
-        }
+          </div>
+        ) : (
+          <div className="w-full h-full overflow-auto">
+            <Page />
+          </div>
+        )}
       </div>
     </>
   );

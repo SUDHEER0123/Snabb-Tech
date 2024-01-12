@@ -70,7 +70,7 @@ const ResetPassword = () => {
                     type={showPassword ? "text" : "password"}
                     placeholder="Password"
                     className="w-full p-2 text-[#A95454]  text-sm focus-within:ring-0 focus-within:outline-none"
-                    style={{backgroundColor:"#F5F1ED"}}
+                    style={{ backgroundColor: "#F5F1ED" }}
                   />
                   {tab === "Sign in" && (
                     <span
@@ -87,7 +87,7 @@ const ResetPassword = () => {
                     type={showPassword ? "text" : "password"}
                     placeholder="Password"
                     className="w-full p-2 text-[#A95454]  text-sm focus-within:ring-0 focus-within:outline-none"
-                    style={{backgroundColor:"#F5F1ED"}}
+                    style={{ backgroundColor: "#F5F1ED" }}
                   />
                   {tab === "Sign in" && (
                     <span

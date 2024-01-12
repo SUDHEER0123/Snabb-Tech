@@ -33,7 +33,7 @@ const ForgetPassword = () => {
                 type="email"
                 placeholder="Email Address"
                 className="w-full p-2 text-[#A95454]  text-sm font-normal focus-within:ring-0 focus-within:outline-none"
-                style={{backgroundColor:"#F5F1ED"}}
+                style={{ backgroundColor: "#F5F1ED" }}
               />
             </div>
             {tab === "Get the link" && (
