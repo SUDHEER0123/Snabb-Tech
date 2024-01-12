@@ -59,7 +59,7 @@ const Navbar = () => {
 
       {/* Mobile Navbar */}
       <div className="sm:hidden fixed inset-0 bg-[#F5F1ED]">
-        <div className="w-full flex justify-between">
+        <div className="w-full flex justify-between px-5">
           <span className="text-[13px] font-normal tracking-[-1.5px] text-[#1F1F1F]">
             EN - FR
           </span>
@@ -75,7 +75,7 @@ const Navbar = () => {
         </div>
 
         {isOpen ? (
-          <div className="absolute inset-0 p-4 top-20 z-20">
+          <div className="absolute inset-0 p-4 top-20">
             <div className="border border-[#1F1F1F] rounded-t-[180px] h-full">
               <div className="flex flex-col gap-7 justify-center items-center my-20">
                 <p className="text-base tracking-[-1.5px] font-normal underline">
@@ -118,7 +118,10 @@ const Navbar = () => {
             </div> 
           </div>
         ):(
-          <Page/>
+          <div className="w-full h-full overflow-auto">
+            <Page/>
+            </div>
+          
         )
         
         }

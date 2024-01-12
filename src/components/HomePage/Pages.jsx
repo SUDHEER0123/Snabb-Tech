@@ -21,73 +21,118 @@ import person2 from "../../assets/person2.png";
 import person3 from "../../assets/person3.png";
 import person4 from "../../assets/person4.png";
 import agri from "../../assets/agri.png";
+import company from "../../assets/company.png";
 const Page = () => {
   return (
     <div className="w-full h-full min-h-screen bg-[#F5F1ED] pt-10">
-      <div className="w-full flex flex-col gap-12 h-full px-10">
-        <div className="w-full text-center lg:text-5xl text-2xl font-medium px-20">
+      <div className="w-full flex flex-col gap-12 px-10">
+        <div className="w-full text-center lg:text-[65px] text-[20px] font-medium :px-20">
           Nous réunissons experts du monde entier et organisations en Afrique
         </div>
-        <div className="w-full h-full flex flex-col lg:flex-row lg:justify-between items-center gap-20 mt-5 lg:mt-10 opacity-[0.19]">
-          <div className="flex flex-col gap-5 items-center lg:items-start">
-            <p className="text-[#A95454] lg:text-4xl text-2xl font-medium">
-              Organisations en Afrique
-            </p>
-            <p className="text-[#1F1F1F] lg:text-base text-sm font-medium">
-              Vous êtes une entreprise privée ou publique basée en Afrique et
-              vous avez du mal à recruter des profils expérimentés? Vous êtes
-              une start-up africaine et vous souhaitez faire appel aux services
-              d'un prestataire externe? Vous recherchez une expertise spécifique
-              pour réaliser un futur projet? Grâce à son réseau, PANDA vous aide
-              à trouver les experts dont vous avez besoin!
-            </p>
-            <p className="text-[#1F1F1F] lg:text-base text-sm font-medium">
-              Grâce à son réseau, PANDA vous aide à trouver les experts dont
-              vous avez besoin!
-            </p>
-          </div>
-
-          <div className="w-full lg:w-full">
+        <div className="w-full h-full flex flex-col lg:flex-row lg:justify-between items-center gap-20 mt-5 lg:opacity-[0.19]">
+          <div className="w-full lg:hidden">
             <div className="w-full h-full">
               <img
                 src={backImage}
-                alt="Background Image"
+                alt="Background"
+                className="w-full object-cover rounded-t-[450px]"
+              />
+            </div>
+            <div className="w-full h-full pl-5">
+              <img
+                src={company}
+                alt="Page"
+                className="w-full object-cover rounded-t-[450px] -mt-[500px]"
+              />
+            </div>
+          </div>
+          <div className="flex lg:flex-col flex-row gap-5 items-start">
+            <div className="flex flex-col items-center lg:items-start gap-5">
+              <p className="text-[#A95454] lg:text-[40px] text-[20px] font-medium">
+                Organisations en Afrique
+              </p>
+              <p className="text-[#1F1F1F] lg:text-[15px] text-[13px] font-medium">
+                Vous êtes une entreprise privée ou publique basée en Afrique et
+                vous avez du mal à recruter des profils expérimentés? Vous êtes
+                une start-up africaine et vous souhaitez faire appel aux
+                services d'un prestataire externe? Vous recherchez une expertise
+                spécifique pour réaliser un futur projet? Grâce à son réseau,
+                PANDA vous aide à trouver les experts dont vous avez besoin!
+              </p>
+              <p className="text-[#1F1F1F] lg:text-[15px] text-[13px] font-medium">
+                Grâce à son réseau, PANDA vous aide à trouver les experts dont
+                vous avez besoin!
+              </p>
+            </div>
+
+            <div className="lg:hidden">
+              <p className="text-[#A95454] lg:text-[40px] text-[20px] font-medium">
+                Experts
+              </p>
+              <p className="text-[#1F1F1F] lg:text-base text-sm font-medium">
+                Vous êtes un professionnel expérimenté et vous planifiez de
+                partir travailler en Afrique? Vous vous rendez souvent sur le
+                continent africain pour des raisons professionnelles et vous
+                souhaitez étendre votre réseau? Vous souhaitez partager votre
+                expertise avec des organisations africaines sans vous déplacer?
+                PANDA est la plateforme de networking des experts pour la
+                réalisation de leurs projets professionnels sur le continent
+                africain!
+              </p>
+              <p className="text-[#1F1F1F] lg:text-base text-sm font-medium">
+                PANDA est la plateforme de networking des experts pour la
+                réalisation de leurs projets professionnels sur le continent
+                africain!
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full max-sm:hidden lg:w-full">
+            <div className="w-full h-full">
+              <img
+                src={backImage}
+                alt="Background"
                 className="w-full object-cover rounded-t-[450px]"
               />
             </div>
             <div className="w-full h-full pl-5">
               <img
                 src={pageImage}
-                alt="Page Image"
-                className="w-full object-cover rounded-t-[450px] -mt-[220px]"
+                alt="Page"
+                className="w-full object-cover rounded-t-[450px] lg:-mt-[220px]"
               />
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 items-center lg:items-start">
-            <p className="text-[#A95454] lg:text-4xl text-2xl font-medium">
-              Experts
-            </p>
-            <p className="text-[#1F1F1F] lg:text-base text-sm font-medium">
-              Vous êtes un professionnel expérimenté et vous planifiez de partir
-              travailler en Afrique? Vous vous rendez souvent sur le continent
-              africain pour des raisons professionnelles et vous souhaitez
-              étendre votre réseau? Vous souhaitez partager votre expertise avec
-              des organisations africaines sans vous déplacer? PANDA est la
-              plateforme de networking des experts pour la réalisation de leurs
-              projets professionnels sur le continent africain!
-            </p>
-            <p className="text-[#1F1F1F] lg:text-base text-sm font-medium">
-              PANDA est la plateforme de networking des experts pour la
-              réalisation de leurs projets professionnels sur le continent
-              africain!
-            </p>
+          <div className="max-sm:hidden">
+            <div className="flex flex-col gap-5 items-center lg:items-start">
+              <p className="text-[#A95454] lg:text-[40px] text-[20px] font-medium">
+                Experts
+              </p>
+              <p className="text-[#1F1F1F] lg:text-base text-sm font-medium">
+                Vous êtes un professionnel expérimenté et vous planifiez de
+                partir travailler en Afrique? Vous vous rendez souvent sur le
+                continent africain pour des raisons professionnelles et vous
+                souhaitez étendre votre réseau? Vous souhaitez partager votre
+                expertise avec des organisations africaines sans vous déplacer?
+                PANDA est la plateforme de networking des experts pour la
+                réalisation de leurs projets professionnels sur le continent
+                africain!
+              </p>
+              <p className="text-[#1F1F1F] lg:text-base text-sm font-medium">
+                PANDA est la plateforme de networking des experts pour la
+                réalisation de leurs projets professionnels sur le continent
+                africain!
+              </p>
+            </div>
           </div>
         </div>
         {/* 2nd */}
-        <div className="flex flex-col justify-center items-start gap-10">
-          <p className="text-[65px] font-medium">Missions de PANDA</p>
-          <div className="w-full flex flex-wrap items-center gap-5 justify-center">
+        <div className="flex flex-col justify-center items-start gap-10 mt-7">
+          <p className="lg:text-[65px] text-[20px] text-left font-medium">
+            Missions de PANDA
+          </p>
+          <div className="w-full flex flex-wrap items-center gap-5 lg:justify-center justify-start">
             {MissionData.map((ele, idx) => (
               <MissionCard
                 id={ele.id}
@@ -101,9 +146,12 @@ const Page = () => {
         {/* 3rd */}
 
         <div className="flex flex-col gap-5 mt-7">
-          <p className="text-[65px] font-medium">Fonctionnalités</p>
-          <div className="w-full flex justify-center items-start">
-            <div className="w-2/3 flex flex-wrap gap-10">
+          <p className="lg:text-[65px] text-[20px] font-medium">
+            Fonctionnalités
+          </p>
+
+          <div className="w-full flex lg:flex-row flex-col gap-12 justify-center items-start">
+            <div className="lg:w-2/3 w-full flex flex-wrap gap-10">
               <div className="flex flex-col">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -123,10 +171,10 @@ const Page = () => {
                   <div className="w-[25px] h-[28px]">
                     <img className="w-11 h-11" src={star} alt="star" />
                   </div>
-                  <p className="text-[18px] font-medium text-center uppercase">
+                  <p className="lg:text-[18px] text-xs font-medium text-center uppercase">
                     Sélection de profils
                   </p>
-                  <p className="text-[15px] font-normal self-stretch text-center">
+                  <p className="lg:text-[15px] text-[13px] font-normal self-stretch text-center">
                     Sélectionnez les meilleurs profils d'experts ou
                     organisations qui vous intéressent et entrez en contact avec
                     eux!{" "}
@@ -153,10 +201,10 @@ const Page = () => {
                   <div className="w-[25px] h-[28px]">
                     <img className="w-11 h-11" src={star} alt="star" />
                   </div>
-                  <p className="text-[18px] font-medium text-center uppercase">
+                  <p className="lg:text-[18px] text-xs  font-medium text-center uppercase">
                     Publication
                   </p>
-                  <p className="text-[15px] font-normal self-stretch text-center">
+                  <p className="lg:text-[15px] text-[13px] font-normal self-stretch text-center">
                     Offres d’emploi, annonces, collaborations, événements, etc.
                     Publiez du contenu exclusif sur votre page privée !
                   </p>
@@ -182,10 +230,10 @@ const Page = () => {
                   <div className="w-[25px] h-[28px]">
                     <img className="w-11 h-11" src={star} alt="star" />
                   </div>
-                  <p className="text-[18px] font-medium text-center uppercase">
+                  <p className="lg:text-[18px] text-xs  font-medium text-center uppercase">
                     tRAVEL MAP
                   </p>
-                  <p className="text-[15px] font-normal self-stretch text-center">
+                  <p className="lg:text-[15px] text-[13px] font-normal self-stretch text-center">
                     Rencontrez-vous grâce à notre Travel Map! Cette
                     fonctionnalité permet aux experts de notifier leurs
                     déplacements sur le continent africain. Il ne reste plus
@@ -199,10 +247,10 @@ const Page = () => {
                   <div className="w-[25px] h-[28px]">
                     <img className="w-11 h-11" src={star} alt="star" />
                   </div>
-                  <p className="text-[18px] font-medium text-center uppercase">
+                  <p className="lg:text-[18px] text-xs  font-medium text-center uppercase">
                     Filtres & recherche avancée
                   </p>
-                  <p className="text-[15px] font-normal self-stretch text-center">
+                  <p className="lg:text-[15px] text-[13px] font-normal self-stretch text-center">
                     Ciblez vos recherches par secteur d'activité, pays et plus
                     encore.
                   </p>
@@ -228,10 +276,10 @@ const Page = () => {
                   <div className="w-[25px] h-[28px]">
                     <img className="w-11 h-11" src={star} alt="star" />
                   </div>
-                  <p className="text-[18px] font-medium text-center uppercase">
+                  <p className="lg:text-[18px] text-xs  font-medium text-center uppercase">
                     NOTIFICATIONS
                   </p>
-                  <p className="text-[15px] font-normal self-stretch text-center">
+                  <p className="lg:text-[15px] text-[13px] font-normal self-stretch text-center">
                     Soyez directement avertis des nouvelles publications et
                     mises à jour grâce aux notifications.
                   </p>
@@ -252,8 +300,8 @@ const Page = () => {
                 </svg>
               </div>
             </div>
-            <div className="w-1/3 flex flex-col gap-10">
-              <img src={world} />
+            <div className="lg:w-1/3 w-full flex flex-col gap-10">
+              <img src={world} alt="world" />
               <button className=" px-10 py-[18px] border-[0.5px] border-[#1F1F1F] rounded-[35px] text-base">
                 Explorer la Travel Map
               </button>
@@ -274,13 +322,13 @@ const Page = () => {
                 <div className="h-2 w-[96px] bg-[#E0E0E0]"></div>
               </div>
 
-              <p className="text-[65px] font-medium text-center">
+              <p className="lg:text-[65px] text-[20px] font-medium text-center">
                 Découvrez les experts
               </p>
             </div>
 
             <div className="flex flex-col gap-8">
-              <p className="text-[15px] font-normal">
+              <p className="lg:text-[15px] text-[13px] font-normal">
                 Connectez-vous avec des organisations africaines, postulez au
                 job de vos rêves en Afrique ou partagez votre expertise même à
                 distance!{" "}
@@ -292,22 +340,22 @@ const Page = () => {
           </div>
           <div className="flex flex-col gap-5 justify-between">
             <div className="flex flex-col ">
-              <p className="text-[40px] font-medium">
+              <p className="lg:text-[40px] text-[15px] font-medium">
                 “ Mon rêve était d’aller vivre en Afrique. j'ai postulé à une
                 offre d'emploi pour le poste de web developer publiée sur PANDA
                 et le mois suivant je commençais à travailler à Dakar! ”
               </p>
-              <p className="text-right text-[13px] font-bold uppercase text-[#A95454]">
+              <p className="text-right lg:text-[13px] text-[10px] font-bold uppercase text-[#A95454]">
                 Omar Ndiaye
               </p>
             </div>
 
             <div className="w-full flex justify-evenly items-baseline flex-wrap">
-              <img src={one} className="rounded-t-[200px]" />
+              <img src={one} className="rounded-t-[200px]" alt="one person" />
 
-              <img src={two} className="rounded-t-[200px]" />
+              <img src={two} className="rounded-t-[200px]" alt="person" />
 
-              <img src={three} className="rounded-t-[200px]" />
+              <img src={three} className="rounded-t-[200px]" alt="perosn2" />
             </div>
           </div>
         </div>
@@ -316,20 +364,20 @@ const Page = () => {
         <div className="flex gap-6 mt-7">
           <div className="flex flex-col gap-5 justify-between">
             <div className="flex flex-col ">
-              <p className="text-[40px] font-medium">
+              <p className="lg:text-[40px] text-[15px] font-medium">
                 “PANDA nous donne accès aux meilleurs talents dans leur domaine
                 d'activité et à de réelles perspectives de collaboration! ”
               </p>
-              <p className="text-left text-[13px] font-bold uppercase text-[#A95454]">
+              <p className="text-left lg:text-[13px] text-[10px] font-bold uppercase text-[#A95454]">
                 LGB Company
               </p>
             </div>
 
             <div className="w-full flex justify-evenly items-baseline flex-wrap">
-              <img src={_one} className="rounded-t-[200px]" />
+              <img src={_one} className="rounded-t-[200px]" alt="perosn" />
 
-              <img src={_two} className="rounded-t-[200px]" />
-              <img src={_three} className="rounded-t-[200px]" />
+              <img src={_two} className="rounded-t-[200px]" alt="perosn" />
+              <img src={_three} className="rounded-t-[200px]" alt="person" />
             </div>
           </div>
           <div className="w-1/3 flex flex-col justify-around items-baseline gap-8">
@@ -340,12 +388,12 @@ const Page = () => {
               <div className="h-2 w-[96px] bg-[#E0E0E0]"></div>
               <div className="h-2 w-[96px] bg-[#E0E0E0]"></div>
             </div>
-            <p className="text-[65px] font-medium text-center">
+            <p className="lg:text-[65px] text-[20px] font-medium text-center">
               Découvrez les organisations en Afrique
             </p>
 
             <div className="flex flex-col gap-8">
-              <p className="text-[15px] font-normal">
+              <p className="lg:text-[15px] text-[13px] font-normal">
                 Trouvez les experts que vous recherchez, publiez vos offres
                 d'emploi et d'autres contenus exclusifs sur votre organisation!
               </p>
@@ -360,11 +408,11 @@ const Page = () => {
 
         <div className="w-full flex flex-row justify-between gap-10 mt-7">
           <div className="w-1/3 flex flex-col justify-between h-screen">
-            <p className="text-[65px] font-medium text-start">
+            <p className="lg:text-[65px] text-[20px] font-medium text-start">
               Offres d'emploi
             </p>
             <div className="flex flex-col gap-10">
-              <p className="text-[15px] font-normal">
+              <p className="lg:text-[15px] text-[13px] font-normal">
                 Trouvez les experts que vous recherchez, publiez vos offres
                 d'emploi et d'autres contenus exclusifs sur votre organisation!
               </p>
@@ -376,23 +424,23 @@ const Page = () => {
           <div className="w-2/3 flex flex-wrap justify-around gap-5">
             <div className="h-[352px] w-[398px] border border-[#E0E0E0] rounded-[112px] flex flex-col justify-evenly">
               <div className="flex flex-col justify-center items-center gap-2 pt-10 px-3">
-                <p className="text-[30px] font-semibold">
+                <p className="lg:text-[30px] text-[13px] font-semibold">
                   Lead Software Engineer
                 </p>
-                <p className="text-[#A95454] text-[15px] font-normal">
+                <p className="text-[#A95454] lg:text-[15px] text-[10px] font-normal">
                   Madagascar
                 </p>
               </div>
               <div className="flex justify-evenly items-center">
                 <div className="flex flex-col gap-1">
-                  <p className="text-[15px] font-medium text-[#A95454]">
+                  <p className="lg:text-[15px] text-[10px] font-medium text-[#A95454]">
                     Full-time
                   </p>
-                  <p className="text-[15px] font-medium underline">
+                  <p className="lg:text-[15px] text-[10px] font-medium underline">
                     + Favorites
                   </p>
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="lg:flex flex-col hidden gap-4">
                   <img
                     src={duck}
                     className="w-[78px] h-[76px] rounded-[40px]"
@@ -400,8 +448,11 @@ const Page = () => {
                   />
                   <p className="text-[13px] font-bold">Tubik Studio</p>
                 </div>
+                <div className="lg:hidden"></div>
                 <div>
-                  <p className="text-[15px] font-normal">1 day ago</p>
+                  <p className="lg:text-[15px] text-[10px] font-normal">
+                    1 day ago
+                  </p>
                 </div>
               </div>
               <div className="w-full flex justify-center">
@@ -413,21 +464,23 @@ const Page = () => {
 
             <div className="h-[352px] w-[398px] border border-[#E0E0E0] rounded-[112px] flex flex-col justify-evenly">
               <div className="flex flex-col justify-center items-center gap-2 pt-10 px-3">
-                <p className="text-[30px] font-semibold">Risk Analyst</p>
-                <p className="text-[#A95454] text-[15px] font-normal">
+                <p className="lg:text-[30px] text-[13px] font-semibold">
+                  Risk Analyst
+                </p>
+                <p className="text-[#A95454] lg:text-[15px] text-[10px] font-normal">
                   Madagascar
                 </p>
               </div>
               <div className="flex justify-evenly items-center">
                 <div className="flex flex-col gap-1">
-                  <p className="text-[15px] font-medium text-[#A95454]">
+                  <p className="lg:text-[15px] text-[10px] font-medium text-[#A95454]">
                     Full-time
                   </p>
-                  <p className="text-[15px] font-medium underline">
+                  <p className="lg:text-[15px] text-[10px] font-medium underline">
                     + Favorites
                   </p>
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="lg:flex flex-col hidden gap-4">
                   <img
                     src={r}
                     className="w-[78px] h-[76px] rounded-[40px]"
@@ -435,8 +488,11 @@ const Page = () => {
                   />
                   <p className="text-[13px] font-bold">Bubba Gump</p>
                 </div>
+                <div className="lg:hidden"></div>
                 <div>
-                  <p className="text-[15px] font-normal">1 day ago</p>
+                  <p className="lg:text-[15px] text-[10px] font-normal">
+                    1 day ago
+                  </p>
                 </div>
               </div>
               <div className="w-full flex justify-center">
@@ -448,21 +504,23 @@ const Page = () => {
 
             <div className="h-[352px] w-[398px] border border-[#E0E0E0] rounded-[112px] flex flex-col justify-evenly">
               <div className="flex flex-col justify-center items-center gap-2 pt-10 px-3">
-                <p className="text-[30px] font-semibold">Financial Analyst</p>
-                <p className="text-[#A95454] text-[15px] font-normal">
+                <p className="lg:text-[30px] text-[13px] font-semibold">
+                  Financial Analyst
+                </p>
+                <p className="text-[#A95454] lg:text-[15px] text-[10px] font-normal">
                   Madagascar
                 </p>
               </div>
               <div className="flex justify-evenly items-center">
                 <div className="flex flex-col gap-1">
-                  <p className="text-[15px] font-medium text-[#A95454]">
+                  <p className="lg:text-[15px] text-[10px] font-medium text-[#A95454]">
                     Full-time
                   </p>
-                  <p className="text-[15px] font-medium underline">
+                  <p className="lg:text-[15px] text-[10px] font-medium underline">
                     + Favorites
                   </p>
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="lg:flex flex-col hidden gap-4">
                   <img
                     src={n}
                     className="w-[78px] h-[76px] rounded-[40px]"
@@ -470,8 +528,11 @@ const Page = () => {
                   />
                   <p className="text-[13px] font-bold">SP-holding</p>
                 </div>
+                <div className="lg:hidden"></div>
                 <div>
-                  <p className="text-[15px] font-normal">1 day ago</p>
+                  <p className="lg:text-[15px] text-[10px] font-normal">
+                    1 day ago
+                  </p>
                 </div>
               </div>
               <div className="w-full flex justify-center">
@@ -483,21 +544,23 @@ const Page = () => {
 
             <div className="h-[352px] w-[398px] border border-[#E0E0E0] rounded-[112px] flex flex-col justify-evenly">
               <div className="flex flex-col justify-center items-center gap-2 pt-10 px-3">
-                <p className="text-[30px] font-semibold">Data Engineer</p>
-                <p className="text-[#A95454] text-[15px] font-normal">
+                <p className="lg:text-[30px] text-[13px] font-semibold">
+                  Data Engineer
+                </p>
+                <p className="text-[#A95454] lg:text-[15px] text-[10px] font-normal">
                   Madagascar
                 </p>
               </div>
               <div className="flex justify-evenly items-center">
                 <div className="flex flex-col gap-1">
-                  <p className="text-[15px] font-medium text-[#A95454]">
+                  <p className="lg:text-[15px] text-[10px] font-medium text-[#A95454]">
                     Full-time
                   </p>
-                  <p className="text-[15px] font-medium underline">
+                  <p className="lg:text-[15px] text-[10px] font-medium underline">
                     + Favorites
                   </p>
                 </div>
-                <div className="flex flex-col gap-4 justify-center items-center">
+                <div className="lg:flex flex-col hidden gap-4 justify-center items-center">
                   <img
                     src={d}
                     className="w-[78px] h-[76px] rounded-[40px]"
@@ -507,8 +570,11 @@ const Page = () => {
                     Vehement Capital Partners
                   </p>
                 </div>
+                <div className="lg:hidden"></div>
                 <div>
-                  <p className="text-[15px] font-normal">1 day ago</p>
+                  <p className="lg:text-[15px] text-[10px] font-normal">
+                    1 day ago
+                  </p>
                 </div>
               </div>
               <div className="w-full flex justify-center">
@@ -531,13 +597,17 @@ const Page = () => {
               <div className="h-2 w-[96px] bg-[#E0E0E0]"></div>
               <div className="h-2 w-[96px] bg-[#E0E0E0]"></div>
             </div>
-            <p className="text-[65px] font-medium">Evénements à venir</p>
+            <p className="lg:text-[65px] text-[20px] font-medium">
+              Evénements à venir
+            </p>
             <div className="flex flex-col justify-center items-start gap-5">
-              <p className="text-[13px] font-bold">Publié par: Pablo Diahuno</p>
+              <p className="lg:text-[13px] text-[10px] font-bold">
+                Publié par: Pablo Diahuno
+              </p>
               <img src={person} alt="person" className="rounded-[50%]" />
             </div>
 
-            <p className="text-[15px] font-normal">
+            <p className="lg:text-[15px] text-[13px] font-normal">
               Sortez votre carnet d'adresses! Restez informés de tous les
               événements à venir autour du business en Afrique organisés en
               Afrique ou à l'étranger.
@@ -562,19 +632,19 @@ const Page = () => {
             </div>
 
             <div className="flex">
-              <span className="text-[13px] text-[#1F1F1F] font-bold">
+              <span className="lg:text-[13px] text-[10px] text-[#1F1F1F] font-bold">
                 Date:
               </span>
-              <span className="text-[13px] text-[#A95454] font-bold">
+              <span className="lg:text-[13px] text-[10px] text-[#A95454] font-bold">
                 10/07/22
               </span>
             </div>
 
             <div className="flex">
-              <span className="text-[13px] text-[#1F1F1F] font-bold">
+              <span className="lg:text-[13px] text-[10px] text-[#1F1F1F] font-bold">
                 Lieu:{" "}
               </span>
-              <span className="text-[13px] text-[#A95454] font-bold">
+              <span className="lg:text-[13px] text-[10px] text-[#A95454] font-bold">
                 Senegal
               </span>
             </div>
@@ -584,28 +654,30 @@ const Page = () => {
 
         <div className="flex gap-10 justify-between items-start mt-7 w-full">
           <div className="w-1/3 flex flex-col justify-center items-baseline gap-8 ">
-            <p className="text-[65px] font-medium uppercase">Témoignages</p>
+            <p className="lg:text-[65px] text-[20px] font-medium uppercase">
+              Témoignages
+            </p>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col justify-start gap-2">
-                <span className="text-[13px] text-[#1F1F1F] font-bold">
+                <span className="lg:text-[13px] text-[10px] text-[#1F1F1F] font-bold">
                   Diaspora Member:
                 </span>
-                <span className="text-[13px] text-[#A95454] font-bold">
+                <span className="lg:text-[13px] text-[10px] text-[#A95454] font-bold">
                   Artur Luison
                 </span>
               </div>
 
               <div className="flex flex-col justify-start gap-2">
-                <span className="text-[13px] text-[#1F1F1F] font-bold">
+                <span className="lg:text-[13px] text-[10px] text-[#1F1F1F] font-bold">
                   Job Position:
                 </span>
-                <span className="text-[13px] text-[#A95454] font-bold">
+                <span className="lg:text-[13px] text-[10px] text-[#A95454] font-bold">
                   {" "}
                   Manager
                 </span>
               </div>
             </div>
-            <p className="text-[15px] font-medium">
+            <p className="lg:text-[15px] text-[13px] font-medium">
               “ Risus, sed venenatis sed morbi lectus nunc tincidunt quam. Eget
               volutpat elementum cum turpis feugiat imperdiet auctor accumsan.
               Ut pulvinar orci. “
@@ -628,13 +700,13 @@ const Page = () => {
               <p className="text-[15px] font-bold">
                 Very Nice Atmosphere and experience with “Welcome to PANDA”
               </p>
-              <p className="text-[15px] font-normal">
+              <p className="lg:text-[15px] text-[13px] font-normal">
                 Risus, sed venenatis sed morbi lectus nunc tincidunt quam. Eget
                 volutpat elementum cum turpis feugiat imperdiet auctor accumsan.
                 Ut pulvinar orci.
               </p>
 
-              <p className="text-[15px] font-normal">
+              <p className="lg:text-[15px] text-[13px] font-normal">
                 Risus, sed venenatis sed morbi lectus nunc tincidunt quam. Eget
                 volutpat elementum cum turpis feugiat imperdiet auctor accumsan.
                 Ut pulvinar orci.
@@ -644,16 +716,18 @@ const Page = () => {
         </div>
         {/* 10th */}
         <div className="flex flex-col gap-6 mt-7">
-          <p className="text-[65px] font-medium">Les fondateurs</p>
+          <p className="lg:text-[65px] text-[20px] font-medium">
+            Les fondateurs
+          </p>
           <div className="w-full flex justify-between items-start">
             <div className="flex justify-around gap-5">
               <div className="flex flex-col gap-2">
                 <img src={person3} alt="perosn" className="rounded-t-[200px]" />
                 <div className="flex flex-col justify-start gap-2">
-                  <span className="text-[13px] text-[#1F1F1F] font-bold">
+                  <span className="lg:text-[13px] text-[10px] text-[#1F1F1F] font-bold">
                     Co-fondateur PANDA:
                   </span>
-                  <span className="text-[13px] text-[#A95454] font-bold">
+                  <span className="lg:text-[13px] text-[10px] text-[#A95454] font-bold">
                     Sarah Walu Onya
                   </span>
                 </div>
@@ -661,10 +735,10 @@ const Page = () => {
               <div className="flex flex-col gap-2">
                 <img src={person4} alt="perosn" className="rounded-t-[200px]" />
                 <div className="flex flex-col justify-start gap-2">
-                  <span className="text-[13px] text-[#1F1F1F] font-bold">
+                  <span className="lg:text-[13px] text-[10px] text-[#1F1F1F] font-bold">
                     Co-fondateur PANDA:
                   </span>
-                  <span className="text-[13px] text-[#A95454] font-bold">
+                  <span className="lg:text-[13px] text-[10px] text-[#A95454] font-bold">
                     Abdoulaye Ba
                   </span>
                 </div>
@@ -672,7 +746,7 @@ const Page = () => {
             </div>
 
             <div className="w-1/3 flex flex-col gap-7 border border-[#CECBC8] rounded-t-[163px]">
-              <div className="p-10 mt-10 text-[15px] font-normal">
+              <div className="p-10 mt-10 lg:text-[15px] text-[13px] font-normal">
                 “ <span className="text-[#A95454]">Sarah</span> et
                 <span className="text-[#A95454]"> Abdoulaye </span> sont tous
                 deux consultants et managers dans un groupe international de
@@ -699,7 +773,7 @@ const Page = () => {
 
         <div className="mt-7 ">
           <div className="w-full flex flex-col justify-center items-center px-12">
-            <div className="text-[40px] font-medium leading-[54px] text-justify">
+            <div className="lg:text-[40px] text-[15px] font-medium leading-[54px] text-justify">
               “ Notre objectif est de capturer et partager les connaissances,
               les expertises et les réseaux afin de créer des opportunités
               illimitées, que ce soit pour les acteurs africains à la recherche
@@ -707,7 +781,7 @@ const Page = () => {
               experts du monde entier qui souhaitent lancer des projets
               innovants en Afrique. “
             </div>
-            <div className="text-[#A95454] text-[13px] font-bold text-right w-full">
+            <div className="text-[#A95454] lg:text-[13px] text-[10px] font-bold lg:text-right text-center w-full">
               Sarah et Abdoulaye
             </div>
           </div>
@@ -715,7 +789,7 @@ const Page = () => {
 
         {/* 12 */}
         <div className="mt-7 w-full flex flex-col gap-5">
-          <p className="text-[65px] font-medium">
+          <p className="lg:text-[65px] text-[20px] font-medium">
             Top 5 des domaines d’activités porteurs en Afrique{" "}
           </p>
           <div className="w-full flex justify-between items-center">
@@ -734,38 +808,38 @@ const Page = () => {
                 <div className="h-2 w-[96px] bg-[#E0E0E0]"></div>
               </div>
 
-              <div className="flex flex-col justify-center items-start gap-[30px]">
+              <div className="flex flex-col justify-center items-start lg:gap-[30px] gap-[23px]">
                 <div className="flex gap-2 w-full">
                   <img src={star} alt="star" />
-                  <span className="text-[40px] font-medium leading-[43.68px]">
+                  <span className="lg:text-[40px] text-[15px] font-medium leading-[43.68px]">
                     Les énergies renouvelables
                   </span>
                 </div>
 
                 <div className="flex gap-2 w-full">
                   <img src={star} alt="star" />
-                  <span className="text-[40px] font-medium leading-[43.68px] text-[#A95454]">
+                  <span className="lg:text-[40px] text-[15px] font-medium leading-[43.68px] text-[#A95454]">
                     L'agro-alimentaire
                   </span>
                 </div>
 
                 <div className="flex gap-2 w-full">
                   <img src={star} alt="star" />
-                  <span className="text-[40px] font-medium leading-[43.68px]">
+                  <span className="lg:text-[40px] text-[15px] font-medium leading-[43.68px]">
                     Les technologies
                   </span>
                 </div>
 
                 <div className="flex gap-2 w-full">
                   <img src={star} alt="star" />
-                  <span className="text-[40px] font-medium leading-[43.68px]">
+                  <span className="lg:text-[40px] text-[15px] font-medium leading-[43.68px]">
                     Le e-commerce
                   </span>
                 </div>
 
                 <div className="flex gap-2 w-full">
                   <img src={star} alt="star" />
-                  <span className="text-[40px] font-medium leading-[43.68px]">
+                  <span className="lg:text-[40px] text-[15px] font-medium leading-[43.68px]">
                     Les solutions de paiement
                   </span>
                 </div>
@@ -783,7 +857,7 @@ const Page = () => {
 
         <div className="mt-7 px-12 border-t border-[#495057] border-opacity-[0.1]">
           <div className="w-full flex flex-col justify-center items-center gap-10 mt-7">
-            <div className="text-[40px] font-medium leading-[54px] text-justify mx-auto">
+            <div className="lg:text-[40px] text-[15px] font-medium leading-[54px] text-justify mx-auto">
               Rejoignez notre communauté et aidez-nous à construire la première
               plateforme de networking en ligne à destination du marché
               africain!
@@ -796,9 +870,9 @@ const Page = () => {
                 Créer un compte
               </button>
             </div>
-            <div className="w-full flex justify-between mt-10">
-              <div className="flex flex-col gap-5">
-                <p className="text-[15px] text-[#1F1F1F] font-bold leading-[23px] uppercase">
+            <div className="w-full flex flex-wrap gap-10 lg:gap-5 justify-between mt-10">
+              <div className="flex flex-col lg:gap-5 gap-[30px]">
+                <p className="lg:text-[15px] text-[12px] text-[#1F1F1F] font-bold leading-[23px] uppercase">
                   Page d'accueil
                 </p>
                 <li className="text-[13px] font-normal leading-5 text-[#1F1F1F]">
@@ -827,8 +901,8 @@ const Page = () => {
                 </li>
               </div>
 
-              <div className="flex flex-col gap-5">
-                <p className="text-[15px] text-[#1F1F1F] font-bold leading-[23px] uppercase">
+              <div className="flex flex-col lg:gap-5 gap-[30px]">
+                <p className="lg:text-[15px] text-[12px] text-[#1F1F1F] font-bold leading-[23px] uppercase">
                   pour les EXPERTS
                 </p>
                 <li className="text-[13px] font-normal leading-5 text-[#1F1F1F]">
@@ -845,8 +919,8 @@ const Page = () => {
                 </li>
               </div>
 
-              <div className="flex flex-col gap-5">
-                <p className="text-[15px] text-[#1F1F1F] font-bold leading-[23px] uppercase">
+              <div className="flex flex-col lg:gap-5 gap-[30px]">
+                <p className="lg:text-[15px] text-[12px] text-[#1F1F1F] font-bold leading-[23px] uppercase">
                   pour les organisations en Afrique
                 </p>
                 <li className="text-[13px] font-normal leading-5 text-[#1F1F1F]">
@@ -860,8 +934,8 @@ const Page = () => {
                 </li>
               </div>
 
-              <div className="flex flex-col gap-5">
-                <p className="text-[15px] text-[#1F1F1F] font-bold leading-[23px] uppercase">
+              <div className="flex flex-col lg:gap-5 gap-[30px]">
+                <p className="lg:text-[15px] text-[12px] text-[#1F1F1F] font-bold leading-[23px] uppercase">
                   Contact
                 </p>
                 <li className="text-[13px] font-normal leading-5 text-[#1F1F1F]">
@@ -870,12 +944,15 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="w-full flex justify-between mb-5">
+            <div className="w-full flex justify-between items-center mb-5">
               <div className="flex justify-between items-center gap-12">
-                <pre className="text-[39.231px] font-[350] leading-[53.04px]">
+                <pre className="text-[39.231px] hidden font-[350] leading-[53.04px]">
                   P NDA
                 </pre>
-                <div className="w-[25px] h-[28px] border-[3px] border-black rounded-t-[16.028px] flex justify-center items-center">
+                <pre className="lg:hidden text-[23px] font-[350] leading-[53.04px]">
+                  PANDA
+                </pre>
+                <div className="hidden w-[25px] h-[28px] border-[3px] border-black rounded-t-[16.028px] lg:flex justify-center items-center">
                   <img className="w-11 h-11" src={star} alt="star" />
                 </div>
               </div>
