@@ -84,8 +84,8 @@ const ResetPassword = () => {
 
                 <div className="w-full flex items-center border-b border-[#D1D5DB] hover:border-[#A95454] hover:border-b">
                   <input
-                    type={showPassword ? "text" : "password"}
-                    placeholder="Password"
+                    type={showConfirmPassword ? "text" : "password"}
+                    placeholder="Confirm Password"
                     className="w-full p-2 text-[#A95454]  text-sm focus-within:ring-0 focus-within:outline-none"
                     style={{ backgroundColor: "#F5F1ED" }}
                   />
