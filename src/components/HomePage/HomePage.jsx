@@ -1,8 +1,13 @@
-import Navbar from "../NavBar";
+import Navbar from "../HomePage/NavBar";
+import Page from "./Pages";
 
 const HomePage = ()=>{
     return(
-        <Navbar/>
+        <>     
+       <Navbar/>
+       <Page/>
+        </>
+
     )
 }
 
