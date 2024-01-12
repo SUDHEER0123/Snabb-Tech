@@ -21,7 +21,7 @@ const ForgetPassword = () => {
           </svg>
         </div>
         <div className="flex flex-col gap-3 mx-7 p-10">
-          <p className="text-[#1F1F1F] text-[38px] font-medium">
+          <p className="text-[#1F1F1F] text-[38px] text-center font-medium">
             Forgot password
           </p>
         </div>
